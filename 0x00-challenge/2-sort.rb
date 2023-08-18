@@ -16,7 +16,7 @@ ARGV.each do |arg|
     is_inserted = false
     i = 0
     l = result.size
-    while i < l do
+    while !is_inserted and i < l do
         if result[i] < i_arg
             result.insert(i, i_arg)
             is_inserted = true
