@@ -18,7 +18,8 @@ if (process.argv.length <= 2) {
    ParseInt was failing when the number was 10 or greater
    Fix: converting string using Number object in Javascript.
 */
-const size = Number(process.argv[2])
+const size = Number.parseInt(process.argv[2])
+console.log(size)
 let i, j;
 
 for (i = 0 ; i < size ; i++) {
@@ -27,3 +28,4 @@ for (i = 0 ; i < size ; i++) {
     }
     process.stdout.write("\n");
 }
+process.exit(0)
