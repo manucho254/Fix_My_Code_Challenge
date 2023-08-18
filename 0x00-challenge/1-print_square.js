@@ -19,7 +19,6 @@ if (process.argv.length <= 2) {
    Fix: converting string using Number object in Javascript.
 */
 const size = Number.parseInt(process.argv[2])
-console.log(size)
 let i, j;
 
 for (i = 0 ; i < size ; i++) {
@@ -28,4 +27,3 @@ for (i = 0 ; i < size ; i++) {
     }
     process.stdout.write("\n");
 }
-process.exit(0)
