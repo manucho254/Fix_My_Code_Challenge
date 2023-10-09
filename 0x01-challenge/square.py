@@ -7,7 +7,6 @@ class Square():
     """ class Square that respresents a square.
     """
     width = 0
-    height = 0
 
     def __init__(self, *args, **kwargs):
         """ Initialize class
