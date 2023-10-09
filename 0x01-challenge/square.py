@@ -1,7 +1,11 @@
 #!/usr/bin/python3
+""" class Square
+"""
+
 
 class square():
-
+    """ class Square that respresents a square.
+    """
     width = 0
     height = 0
 
@@ -14,9 +18,13 @@ class square():
         return self.width * self.width
 
     def PermiterOfMySquare(self):
+        """ get perimeter of a circle
+        """
         return (self.width * 4)
 
     def __str__(self):
+        """ String representation of Square class
+        """
         return "{}/{}".format(self.width, self.width)
 
 
