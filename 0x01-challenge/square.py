@@ -7,13 +7,13 @@ class Square():
     """ Class Square that represents a square
     """
     width = 0
-    height = 0
 
     def __init__(self, *args, **kwargs):
         """ initialize Square class
         """
         for key, value in kwargs.items():
-            setattr(self, key, value)
+            if key == "width":
+                setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
@@ -27,7 +27,7 @@ class Square():
     def __str__(self):
         """ Return string representation of a Square
         """
-        return "{}/{}".format(self.width, self.height)
+        return "{}/{}".format(self.width, self.width)
 
 
 if __name__ == "__main__":
